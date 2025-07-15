@@ -12,7 +12,7 @@ Implementation of a message broker using the Publish/Subscribe (Pub/Sub) pattern
 This project is an implementation of a message broker using the Publish/Subscribe (Pub/Sub) pattern. It is built with Java, Spring Boot, and uses Redis as the backend for message queue management.
 The system follows a simple Pub/Sub messaging pattern with the following components:
 
-![image](docs/ops.png)
+![image](docs/obs.png)
 
 - Producer: A CommandLineRunner that executes when the application starts. It publishes test messages to a Redis topic (pubsub:queue) at regular intervals.
 - Consumer: A subscriber that listens to the pubsub:queue topic. Every time the producer sends a message, this consumer receives and processes it, displaying it in the console.
